@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<!-- Delete confirmation message -->
+<div class="card p-4 border-danger">
+  <h1 class="text-danger"><i class="fa-solid fa-triangle-exclamation"></i> Delete Workout?</h1>
+  <p>Are you sure to delete this workout? This cannot be undone.</p>
+
+  <ul class="list-unstyled">
+    <li><strong>Exercise:</strong> <%= workout.exercise %></li>
+    <li><strong>ategory:</strong> <%= workout.category %></li>
+    <li><strong>Date:</strong> <%= workout.date.toISOString().substring(0, 10) %></li>
+  </ul>
+
+  <form action="/workouts/delete/<%= workout._id %>" method="POST">
+    <button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Yes, Delete</button>
+    <a href="/workouts" class="btn btn-secondary">No, Go Back</a>
+  </form>
+</div>
+
+<%- include('../partials/footer') %>

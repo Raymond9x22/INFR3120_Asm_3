@@ -1,0 +1,69 @@
+/* My own CSS for FitLog (on top of Bootstrap) */
+/* Colour scheme: navy, white and grey */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* nav bar */
+.fit-nav {
+  background-color: #1f2a44;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color:#9a9fab !important;
+}
+
+/* splash page hero (light grey box with navy text) */
+.hero {
+  background-color: #e9ecef;
+  color: #1f2a44;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+
+.hero .fa-dumbbell {
+  color: #1f2a44;
+}
+
+/* navy outline button (used on the home page) */
+.btn-outline-navy {
+  color: #1f2a44;
+  border: 1px solid #1f2a44;
+}
+
+.btn-outline-navy:hover {
+  background-color: #1f2a44;
+  color: white;
+}
+
+/* cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* table header */
+.fit-thead th {
+  background-color: #1f2a44;
+  color: white;
+}
+
+/* footer */
+.fit-footer {
+  background-color: #1f2a44;
+  color: white;
+}
+
+.fit-footer a {
+  color: white;
+}

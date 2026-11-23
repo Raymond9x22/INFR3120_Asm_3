@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> | FitLog</title>
+
+  <!-- 3rd party stylesheets:
+       Bootstrap 5 - https://getbootstrap.com
+       Font Awesome 6 (icons) - https://fontawesome.com
+       Google Fonts (Poppins) - https://fonts.google.com -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+<!-- Shared header / nav bar (same on every page) -->
+<nav class="navbar navbar-expand navbar-dark fit-nav">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <i class="fa-solid fa-dumbbell"></i> FitLog
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/workouts"><i class="fa-solid fa-list"></i> Workouts</a></li>
+      <li class="nav-item"><a class="nav-link" href="/workouts/add"><i class="fa-solid fa-plus"></i> Add</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container my-4">
